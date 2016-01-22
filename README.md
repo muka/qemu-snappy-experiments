@@ -3,20 +3,23 @@ qemu-snappy-experiments
 
 Experiments for running the ARM version of ubuntu snappy on qemu.. but NOT working yet :(
 
-Build & start image
+Build kernel image (optional)
 ---
+
+See https://electronicsconcepts.wordpress.com/2015/05/28/running-ubuntu-snappy-on-qemu/
 
 ```
 #build a kernel boot image from vagrant
 vagrant up
 vagrant ssh -c "cd /vagrant && ./build.sh && exit"
 vagrant halt
-
-# image should be there as `arm-vmlinux`
-# start qemu-system-arm (install it if missing)
-./run.sh
-
 ```
+
+Run qemu
+---
+
+Launch `./run.sh` script. Requires `qemu-system-arm `
+
 
 Issues:
 ---
