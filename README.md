@@ -23,11 +23,9 @@ Issues:
 
 __» No network__
 
-This script has to be fixed in order to enable a working network over an host IF
+`eth0` is not up on cloud-init run causing it to fail (there is a no net datasource but seems to be ignored / faulty)
 
-See `./setup-net.sh`
-
-__» Login seems not working (due to missing network or faulty `cloud-init`?) for me__
+__» Login is not working (due to missing network or faulty `cloud-init`?)__
 
 (See https://developer.ubuntu.com/en/snappy/start/installation-tips/)
 
