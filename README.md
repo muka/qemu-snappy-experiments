@@ -21,9 +21,11 @@ vagrant halt
 Issues:
 ---
 
-__» No network!__
+__» No network__
 
-Fix `./setup-net.sh` and add prefix to `run.sh`
+This script has to be fixed in order to enable a working network over an host IF
+
+See `./setup-net.sh`
 
 __» Login seems not working (due to missing network or faulty `cloud-init`?) for me__
 
