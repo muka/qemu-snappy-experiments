@@ -7,7 +7,6 @@ Build & start image
 ---
 
 ```
-
 #build a kernel boot image from vagrant
 vagrant up
 vagrant ssh -c "cd /vagrant && ./build.sh && exit"
