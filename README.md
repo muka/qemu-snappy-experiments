@@ -26,16 +26,18 @@ Issues:
 
 __» No network__
 
-`eth0` is not up on cloud-init run causing it to fail (there is a no net datasource but seems to be ignored / faulty)
+`eth0` is not up or dhcp server is unreachable and cloud-init fails (?)
 
-__» Login is not working (due to missing network or faulty `cloud-init`?)__
+__» Login is not working (due to missing network and/or faulty `cloud-init`?)__
 
 (See https://developer.ubuntu.com/en/snappy/start/installation-tips/)
 
+Login as root with no password
+
 ```
 sudo kpartx -av ubuntu-15.04-snappy-armhf-raspi2.img
-sudo mount /dev/disk/by-label/system-a /mnt
+sudo mount /dev/disk/by-label/system-b /mnt
 
-# edit /mnt/etc/shadow & /mnt/etc/passwd to reset root password
+# edit /mnt/etc/shadow to reset root password
 
 ```
