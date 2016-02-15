@@ -1,10 +1,10 @@
 
-# qemu-system-arm \
-# -m 1G -cpu cortex-a9 -M vexpress-a9 \
-# -kernel xenial-server-cloudimg-armhf-vmlinuz-lpae \
-# -initrd xenial-server-cloudimg-armhf-initrd-generic-lpae \
-# -append "root=/dev/sda rw console=tty0" \
-# -hda xenial-server-cloudimg-armhf.img
+qemu-system-arm \
+-m 1G -cpu cortex-a9 -M vexpress-a9 \
+-kernel xenial-server-cloudimg-armhf-vmlinuz-lpae \
+-initrd xenial-server-cloudimg-armhf-initrd-generic-lpae \
+-append "root=/dev/sda rw console=tty0" \
+-hda xenial-server-cloudimg-armhf.img
 
 # -initrd initrd.gz \
 # -kernel vmlinux-4.4.1-arm \

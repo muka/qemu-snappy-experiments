@@ -5,6 +5,19 @@ Experiments for running an ARM version of ubuntu (snappy) on qemu and have snapc
 
 ## Snapcraft 2.x from Ubuntu ARM (Xenial only)
 
+no luck yet..
+
+lxc-container for xenial armhf?
+
+```
+sudo apt-get install lxc qemu-user-static -yq
+sudo lxc-create -n armhfxenial -t ubuntu -- -a armhf -r xenial
+sudo lxc-start -n armhfxenial
+sudo lxc-console -n armhfxenial
+```
+
+armhf cloud image won't boot
+
 ```
 wget https://cloud-images.ubuntu.com/xenial/current/xenial-server-cloudimg-armhf-disk1.img
 ```
