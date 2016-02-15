@@ -2,7 +2,7 @@
 # Emulate ubuntu core on RPi2 with qemu
 # based on https://electronicsconcepts.wordpress.com/2015/05/28/running-ubuntu-snappy-on-qemu/
 
-sudo apt-get install git ncurses-base libncurses5-dev make gcc-arm-linux-gnueabi qemu-kvm-extras qemu-kvm arm-linux-eabi qemu-system-arm bc -y
+sudo apt-get install git ncurses-base libncurses5-dev make gcc-arm-linux-gnueabi gcc-arm-linux-gnueabi gcc-arm-none-eabi bc -y
 
 Kv=3.18.25
 wget https://cdn.kernel.org/pub/linux/kernel/v3.x/linux-${Kv}.tar.xz
